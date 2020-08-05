@@ -1,0 +1,24 @@
+{
+  "name": "week4_team_eijo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "router.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fac20/week4_team_eijo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fac20/week4_team_eijo/issues"
+  },
+  "homepage": "https://github.com/fac20/week4_team_eijo#readme",
+  "dependencies": {
+    "supertest": "^4.0.2",
+    "tape": "^5.0.1"
+  }
+}
