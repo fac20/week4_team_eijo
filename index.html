@@ -3,26 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <!-- logo? -->
+        <time datetime="2020-08-06 09:00">8th Aug 2020 09:00</time>
     </header>
     <main>
-        <form method="post"> 
-            <label>Penny for your thoughts:
-            <input type="text" required maxlength="20">
-            </label><br>
+        <form method="post" action="blog.html"> 
             <label for="username">Name:</label>
-            <input type="text" name="username" id="username" required>
-            <br>
-            <input type="submit">
+            <input type="text" name="username" id="username" required><label>Penny for your thoughts:
+            <input type="text" required maxlength="20">
+            </label>
+            <input type="submit" value="Post">
         </form>
         <!-- go to feed button? -->
+        <button type="button">Pick a colour!</button>
+        <a href="blog.html">
         <button type="button">Blog/Feed</button>
+        </a>
+
     </main>
     <footer>
         <!-- copyright -->
