@@ -13,6 +13,7 @@ function router(request, response) {
         cssHandler(request,response);
     } else if (url.includes("js")) {
         jsHandler(request,response);    
+    // } else if ()
         //files + pictures
     //else POST - add to array
     // on herokapp.com/ fetch("/hello") is equivalent to herokuapp.com/hello
