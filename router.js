@@ -1,14 +1,15 @@
 const homeHandler = require("./handlers/home")
+const blogHandler = require("./handlers/blog")
 
 function router(request, response) {
     const url = request.url;
     if (url === "/") {
         homeHandler(request, response);
-    } else if (url === "/blog")) {
-        
-    } else if () {
+    } else if (url === "/blog") {
+        blogHandler(request,response);
+    // } else if () {
         //css + js files + pictures
-    } else {
+    // } else {
         //for other urls, 404 OR redirect? use missingHandler
     }
 }

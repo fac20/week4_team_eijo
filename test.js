@@ -24,18 +24,18 @@ test("Home route returns status code 200 OK", t => {
       t.equal(result, true)
       t.end();        
     });
-  });
+});
   
-  //Test to ensure feed page returns OK
-  test("Blog/feed route returns status code 200 OK", t => {
-    supertest(router)
-      .get("/")
-      .expect(200)
-      .expect("content-type", "text/html")
-      .end((err, res) => {
-        t.error(err);
-        let result = res.text.includes("<!--Blog page lalala-->")
-        t.equal(result, true)
-        t.end();        
-      });
-    });
+//Test to ensure feed page returns OK
+test("Blog/feed route returns status code 200 OK", t => {
+  supertest(router)
+    .get("/blog")
+    .expect(200)
+    .expect("content-type", "text/html")
+    .end((err, res) => {
+      t.error(err);
+      let result = res.text.includes("<!--Blog page lalala-->")
+      t.equal(result, true)
+      t.end();        
+  });
+});
