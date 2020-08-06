@@ -64,6 +64,29 @@ test("Check to see if asset requests are handled", (t) => {
     });
 });
 
+//test for the css route 
+test("CSS is OK response of 200", (t) => {
+  supertest(router)
+    .get("style.css") 
+    .expect(200)
+    .expect("content-type", "text/css")
+    .end((err, res) => {
+      t.error(err);
+      t.end();
+})
+
+//test for the script.js request
+test("Check any other page redirects to home", t => {
+  supertest(router)
+    .get("/script.js")
+    .expect(200)
+    .expect("content-type", "application/javascript")
+    .end((err, res) => {
+      t.error(err);
+      t.end();        
+  });
+});
+
 //test to see post request is handled
 test("Check to see if post requests are handled", (t) => {
   supertest(router)
