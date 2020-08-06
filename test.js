@@ -48,8 +48,6 @@ test("Check any other page redirects to home", t => {
     .expect("location", "/")
     .end((err, res) => {
       t.error(err);
-      let result = res.text.includes("<!--Test Number One lalala-->")
-      t.equal(result, true)
       t.end();        
   });
 });
@@ -57,13 +55,11 @@ test("Check any other page redirects to home", t => {
 //test to see if asset requests are handled
 test("Check to see if asset requests are handled", (t) => {
   supertest(router)
-    .get("/Resources/")
+    .get("/Resources/balloon-outline.svg")
     .expect(200)
-    .expect("content-type", "text/html")
+    .expect("content-type", "image/svg")
     .end((err, res) => {
       t.error(err);
-      let result = res.text.includes("<!--Blog page lalala-->");
-      t.equal(result, true);
       t.end();
     });
 });
