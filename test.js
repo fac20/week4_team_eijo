@@ -63,3 +63,17 @@ test("Check to see if asset requests are handled", (t) => {
       t.end();
     });
 });
+
+//test to see post request is handled
+test("Check to see if post requests are handled", (t) => {
+  supertest(router)
+    .post("/blog.html")
+    .expect(200)
+    .send(["a", "b"])
+    .expect("Content-Type", "application/json")
+    .end((err, res) => {
+      t.error(err);
+      t.deepEqual(res.body, ["a", "b"], "Should return payload")
+      t.end();
+    });
+});
