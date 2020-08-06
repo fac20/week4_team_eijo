@@ -39,3 +39,17 @@ test("Blog/feed route returns status code 200 OK", t => {
       t.end();        
   });
 });
+
+//Test to ensure page redirects
+test("Check page redirects", t => {
+  supertest(router)
+    .get("/lsfjvlj")
+    .expect(302)
+    .expect("content-type", "text/html")
+    .end((err, res) => {
+      t.error(err);
+      let result = res.text.includes("<!--Test Number One lalala-->")
+      t.equal(result, true)
+      t.end();        
+  });
+});
