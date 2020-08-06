@@ -41,15 +41,29 @@ test("Blog/feed route returns status code 200 OK", t => {
 });
 
 //Test to ensure page redirects
-test("Check page redirects", t => {
+test("Check any other page redirects to home", t => {
   supertest(router)
     .get("/lsfjvlj")
     .expect(302)
-    .expect("content-type", "text/html")
+    .expect("location", "/")
     .end((err, res) => {
       t.error(err);
       let result = res.text.includes("<!--Test Number One lalala-->")
       t.equal(result, true)
       t.end();        
   });
+});
+
+//test to see if asset requests are handled
+test("Check to see if asset requests are handled", (t) => {
+  supertest(router)
+    .get("/Resources/")
+    .expect(200)
+    .expect("content-type", "text/html")
+    .end((err, res) => {
+      t.error(err);
+      let result = res.text.includes("<!--Blog page lalala-->");
+      t.equal(result, true);
+      t.end();
+    });
 });
