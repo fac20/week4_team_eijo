@@ -9,8 +9,9 @@ function router(request, response) {
         blogHandler(request,response);
     // } else if () {
         //css + js files + pictures
-    // } else {
-        //for other urls, 404 OR redirect? use missingHandler
+    } else {
+        response.writeHead( 302, { location: "/"})
+        response.end();
     }
 }
 
