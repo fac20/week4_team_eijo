@@ -1,0 +1,39 @@
+html, body {
+    margin: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.svg-container{
+    height: 22rem;
+    width: 21rem;
+}
+
+.div-balloon {
+    background-image: url("/Resources/balloon-outline.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+.blog-container {
+    padding: 0 4rem;
+}
+
+.name-container {
+    
+    background-color: aqua;
+    border-radius: 50%;
+    padding: 0.5rem;
+    text-justify: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
