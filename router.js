@@ -8,7 +8,7 @@ function router(request, response) {
     const url = request.url;
     if (url === "/") {
         homeHandler(request, response);
-    } else if (request.method = POST) {
+    } else if (request.method === "POST") {
         //- add to array
     } else if (url === "/blog") {
         blogHandler(request,response);
@@ -18,8 +18,6 @@ function router(request, response) {
         jsHandler(request,response);    
     } else if (url.includes("/Resources")) {
         assetsHandler(request,response);
-    }
-    // on herokapp.com/ fetch("/hello") is equivalent to herokuapp.com/hello
     } else {
         response.writeHead( 302, { location: "/"})
         response.end();
@@ -27,3 +25,5 @@ function router(request, response) {
 }
 
 module.exports = router;
+
+// on herokapp.com/ fetch("/hello") is equivalent to herokuapp.com/hello
