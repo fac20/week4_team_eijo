@@ -10,11 +10,8 @@ function router(request, response) {
     if (url === "/") {  
         homeHandler(request, response);
     } else if (request.method === "POST") {
-<<<<<<< HEAD
         submitHandler(request, response);
-=======
         //- add to array
->>>>>>> master
     } else if (url === "/blog") {
         blogHandler(request,response);
     } else if (url.includes("css")) {
@@ -23,10 +20,6 @@ function router(request, response) {
         jsHandler(request,response);    
     } else if (url.includes("/Resources")) {
         assetsHandler(request,response);
-<<<<<<< HEAD
-    // on herokapp.com/ fetch("/hello") is equivalent to herokuapp.com/hello
-=======
->>>>>>> master
     } else {
         response.writeHead( 302, { location: "/"})
         response.end();

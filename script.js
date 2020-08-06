@@ -17,3 +17,11 @@ const submitBtn = document.getElementById("sendForm");
 // submitBtn.addEventListener("click", e => {
 //  e.preventDefault();
 //})
+
+// Deleting the balloon
+
+let bin = document.querySelector("#img__bin");
+    bin.addEventListener("click", () => {
+        event.target.parentNode.parentNode.remove()
+                })
+    
