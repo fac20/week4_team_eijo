@@ -4,7 +4,7 @@ const path = require("path");
 const types = {
   jpg: "image/jpg",
   png: "image/png",
-  svg: "image/svg",
+  svg: "image/svg+xml",
   ico: "image/x-icon",
 };
 

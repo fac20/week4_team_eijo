@@ -1,3 +1,4 @@
+require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 
@@ -15,4 +16,5 @@ const jsHandler = (request, response) => {
     })
 }
 
+module.exports = jsHandler;
 module.exports = jsHandler;

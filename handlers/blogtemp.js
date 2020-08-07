@@ -39,3 +39,17 @@ function completeContent(postList) {
 }
 
 module.exports = { completeContent, compilePosts }
+           <link rel="stylesheet" href="style.css">
+            <script src="script.js" defer></script>
+        </head>
+        <!--Blog page lalala-->
+        <body>
+            <section>
+                ${postList}
+            </section>
+        </body>
+        </html>
+        `
+}
+
+module.exports = { completeContent, compilePosts }
