@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="script.js" defer></script>
 </head>
@@ -15,14 +16,15 @@
     </header>
     <main>
         <form method="post" action="blog.html"> 
-            <label for="username">Initials:</label>
+            <label for="username">Initials:</label><br>
             <input type="text" name="username" id="username" required maxlength="2">
-            <br>
-            <label>Penny for your thoughts:
-            <input type="text" name="blog" required maxlength="140">
-            </label>
+            <br><br>
+            <label for="blog">Penny for your thoughts:<br>
+            <input type="text" name="blog" id="blog" required maxlength="140">
+            </label><br>
             <input type="submit" id="sendForm" value="Post">
         </form>
+        <br>
         <!-- <button type="button">Pick a colour!</button> -->
         <a href="blog.html">
         <button id="go-to-feed" type="button">Go to Feed</button>
