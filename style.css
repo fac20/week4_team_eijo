@@ -2,8 +2,24 @@ html, body {
     margin: 0;
     max-width: 100%;
     overflow-x: hidden;
+    text-align: center;
 }
 
+/* -------- Form css --------  */
+.time {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* -------- Blog css -------- */
 .svg-container{
     height: 22rem;
     width: 21rem;
