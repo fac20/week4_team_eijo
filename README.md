@@ -28,3 +28,7 @@ Build a microblogging site. It should allow users to submit their own posts and 
 2. Install dependencies using `npm install` (optional: to view tests)
 3. Start the server with `node server.js`
 4. Start posting
+
+### Known bugs
+- only allows you to delete one comment
+- balloon outline doesn't appear
