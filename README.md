@@ -1,6 +1,7 @@
 # Week 4 - Team EIJO
 
 ## Introduction
+Our project can be viewed here: https://blogweek4.herokuapp.com/
 
 ### Project Brief
 Build a microblogging site. It should allow users to submit their own posts and view all the posts submitted by others.
@@ -15,7 +16,7 @@ Build a microblogging site. It should allow users to submit their own posts and 
 - [x] Create server
 - [x] Allow users to post comments
 - [x] Allow users to view comments
-- [ ] Deploy on heroku
+- [x] Deploy on heroku
 - [ ] Allow users to delete comments
 
 ### Modules used
@@ -31,4 +32,3 @@ Build a microblogging site. It should allow users to submit their own posts and 
 
 ### Known bugs
 - only allows you to delete one comment
-- balloon outline doesn't appear
