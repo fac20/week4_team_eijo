@@ -25,6 +25,6 @@ Build a microblogging site. It should allow users to submit their own posts and 
 
 ### To view project
 1. Clone this repo
-2. Install dependencies using `npm install`
+2. Install dependencies using `npm install` (optional: to view tests)
 3. Start the server with `node server.js`
 4. Start posting
